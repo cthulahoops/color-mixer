@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.picker-container {
+  margin-bottom: 20px;
+}
+
+.colorspace-container {
+  margin-bottom: 30px;
+}
+
+.colorspace-container label {
+  margin-right: 15px;
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+#mixContainer {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 2px;
+}
+
+.color-box {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  border: 1px solid #888;
+  background-color: color-mix(
+    in var(--colorspace, srgb),
+    var(--color1) var(--pct, 100%),
+    var(--color2)
+  );
+}

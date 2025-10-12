@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colour Mix Tester</title>
+</head>
+
+<body>
+  <h1>Colour Mix Tester</h1>
+
+  <div class="picker-container">
+    <label for="colorPicker1">Colour 1:</label>
+    <input type="color" id="colorPicker1" value="#0000ff">
+    <label for="colorPicker2" style="margin-left: 20px;">Colour 2:</label>
+    <input type="color" id="colorPicker2" value="#000000">
+  </div>
+
+  <div class="colorspace-container">
+    <label>Colour space:</label>
+    <label><input type="radio" name="colorspace" value="srgb" checked> sRGB</label>
+    <label><input type="radio" name="colorspace" value="srgb-linear"> sRGB-linear</label>
+    <label><input type="radio" name="colorspace" value="oklab"> Oklab</label>
+    <label><input type="radio" name="colorspace" value="oklch"> Oklch</label>
+    <label><input type="radio" name="colorspace" value="lab"> Lab</label>
+    <label><input type="radio" name="colorspace" value="lch"> LCH</label>
+    <label><input type="radio" name="colorspace" value="hsl"> HSL</label>
+    <label><input type="radio" name="colorspace" value="hwb"> HWB</label>
+    <label><input type="radio" name="colorspace" value="xyz"> XYZ</label>
+    <label><input type="radio" name="colorspace" value="xyz-d50"> XYZ-D50</label>
+    <label><input type="radio" name="colorspace" value="xyz-d65"> XYZ-D65</label>
+  </div>
+
+  <code id="cssCode"></code>
+  <div id="mixContainer"></div>
+</body>
+
+</html>
